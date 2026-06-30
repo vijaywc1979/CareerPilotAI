@@ -2,7 +2,7 @@ from pathlib import Path
 
 from app.application import CareerPilotApplication
 from agents.resume.resume_agent import ResumeAgent
-
+from agents.resume.resume_extractor import ResumeExtractor
 
 def main():
 
@@ -15,12 +15,11 @@ def main():
         Path("resume/Executive_Resume.docx")
     )
 
-    print("\n")
-    print("=" * 80)
-    print("RESUME PREVIEW")
-    print("=" * 80)
+    extractor = ResumeExtractor()
 
-    print(resume_text[:3000])
+    profile = extractor.extract(resume_text)
+
+    print(profile)
 
 
 if __name__ == "__main__":
