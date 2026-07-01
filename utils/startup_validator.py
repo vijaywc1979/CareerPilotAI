@@ -16,18 +16,18 @@ class StartupValidator:
     """
 
     REQUIRED_FOLDERS = [
-        "agents",
-        "config",
-        "dashboard",
-        "database",
-        "logs",
-        "models",
-        "prompts",
-        "resume",
-        "services",
-        "tests",
-        "utils",
-        "vectorstore"
+    "agents",
+    "config",
+    "dashboard",
+    "database",
+    "logs",
+    "models",
+    "prompts",
+    "services",
+    "tests",
+    "users",
+    "utils",
+    "vectorstore"
     ]
 
     @classmethod
